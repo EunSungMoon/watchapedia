@@ -1,4 +1,20 @@
-.headerWrap .navbar {
-  color: black;
+.headerWrap .navbar ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.headerWrap .navbar ul li {
+  margin-left: 18px;
+}
+
+.headerWrap .navbar ul li .headBtn {
+  border: none;
+  background: none;
+}
+
+.headerWrap .navbar ul .headLogo {
+  background: url("./css/logo.png");
 }
 /*# sourceMappingURL=style.css.map */

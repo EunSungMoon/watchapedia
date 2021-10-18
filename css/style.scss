@@ -1,5 +1,19 @@
 .headerWrap{
   .navbar{
-    color: black;
+    ul{
+      list-style: none;
+      display: flex;
+      li{
+        margin-left: 18px;
+
+        .headBtn{
+          border: none;
+          background: none;
+        }
+      }
+      .headLogo{
+        background: url('./css/logo.png');
+      }
+    }   
   }
 }
