@@ -1,5 +1,5 @@
 import { sel } from "./common.js";
-export { headObj }
+export { headObj };
 
 let headObj = {
   createDom() {
@@ -20,17 +20,22 @@ let headObj = {
             <li>
               <button class = "headBtn" value = "book"><a href="#"></a>책</button>
             </li>
+            <li>
+              <button class = "btn">로그인</button>
+            </li>
           </ul>
         </div>
       </nav>
     `
     $headerWrap.innerHTML = headerDom
+
   },
   menuEvt() {
     let tabSel = sel.elAll('.headBtn');
 
     for (const tab of tabSel) {
       tab.addEventListener('click', e => {
+        console.log(e.currentTarget);
         location.href = `${e.currentTarget.value}.html`
       })
     }
@@ -38,7 +43,7 @@ let headObj = {
 }
 
 let init = () => {
-  headObj.createDom();
-  headObj.menuEvt();
+  headObj.createDom()
+  headObj.menuEvt()
 }
 init();
